@@ -23,7 +23,7 @@ const acceptCell=`<td>${entry.acceptTerms?'true':'false'}</td>`;
 const row=`<tr>${nameCell}${emailCell}${passwordCell}${dobCell}${acceptCell}</tr>`;
 tableEntries+=row;
 }
-const table=`<table><tr><th>Name</th><th>Mail</th><th>Password</th><th>DOB</th><th>Accepted terms?</th></tr>${tableEntries}</table>`;
+const table=`<table><tr><th>Name</th><th>Email</th><th>Password</th><th>Dob</th><th>Accepted terms?</th></tr>${tableEntries}</table>`;
 let details=document.getElementById("user-details");
 details.innerHTML=table;
 }
